@@ -12,8 +12,12 @@ inputs:
     required: false
   context: 
     description: "context path for the docker image"
-    required: "false"
+    required: false
     default: "."
+  token: 
+    description: "token used to authenticate to GCP"
+    default:  "${{ steps.checkout.outputs.token }}"
+    required: false
 runs:
   using: "composite"
   steps:    

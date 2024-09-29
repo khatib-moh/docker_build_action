@@ -16,8 +16,7 @@ inputs:
     default: "."
   token: 
     description: "token used to authenticate to GCP"
-    default:  "${{ steps.checkout.outputs.token }}"
-    required: false
+    required: true
 runs:
   using: "composite"
   steps:    

@@ -28,7 +28,7 @@ runs:
         with:
           registry: us-central1-docker.pkg.dev
           username: oauth2accesstoken
-          password: ${{ steps.checkout.outputs.token }}   #### must use the atypon_checkout action before this action
+          password: ${{ inputs.token }}   #### must use the atypon_checkout action before this action
       
       - name: Set the tag
         shell: bash

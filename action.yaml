@@ -45,5 +45,5 @@ runs:
         with:
           context: ${{inputs.context}} 
           push: true
-          build-args: ${{inputs.build_args}}                
+          build_args: ${{inputs.build_args}}                
           tags: us-central1-docker.pkg.dev/${{inputs.image_name}}:${{env.final_tag}}
